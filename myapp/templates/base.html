@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from templates.hibootstrap.com/medizo/default/index-2 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 07:48:44 GMT -->
+<head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport=device-width, initial-scale=1.0">
+
+        <!-- Links of CSS Files -->
+        <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/assets/css/animate.min.css">
+        <link rel="stylesheet" href="../static/assets/fonts/flaticon.css">
+        <link rel="stylesheet" href="../static/assets/css/boxicons.min.css">
+        <link rel="stylesheet" href="../static/assets/css/magnific-popup.min.css">
+        <link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../static/assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../static/assets/css/nice-select.min.css">
+        <link rel="stylesheet" href="../static/assets/css/meanmenu.css">
+        <link rel="stylesheet" href="../static/assets/css/style.css">
+        <link rel="stylesheet" href="../static/assets/css/responsive.css">
+        <link rel="stylesheet" href="../static/assets/css/theme-dark.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">        <!--=== Title ===-->
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../static/assets/img/favicon.png">
+    </head>
+    <body>
+        <!-- Pre Loader -->
+        <div class="preloader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pre Loader -->
+
+        <!-- Top Header Start -->
+        <header class="top-header top-header-bg-two">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="header-left">
+                            <div class="header-left-card">
+                                <ul>
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='bx bx-mail-send'></i>
+                                        </div>
+                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#c6aea3aaaaa986aba3a2afbca9e8a5a9ab"><span class="__cf_email__" data-cfemail="2b434e4747446b464e4f42514405484446">{{ request.session.login_email}}</span></a>
+                                    </li>
+
+                                    <li>
+                                        <div class="head-icon">
+                                            <i class='bx bx-user'></i>
+                                        </div>
+                                        <a href="#">{{ request.session.login_name}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="header-right">
+                            <div class="top-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-facebook'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-google-plus'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Top Header End -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                <a href="index" class="logo">
+                    <img src="../static/assets/img/medi+logo.jpeg"  height="90px" width="150" class="logo-one" alt="Logo">
+                    <img src="../static/assets/img/medi+logo.jpeg" height="90px" width="150" class="logo-two" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="main-nav nav-bar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                        <a class="navbar-brand" href="index">
+                            <img src="../static/assets/img/medi+logo.jpeg" height="90px" width="150" class="logo-one" alt="Logo">
+                            <img src="../static/assets/img/medi+logo.jpeg" height="90px" width="150" class="logo-two" alt="Logo">
+                        </a>
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about" class="nav-link">
+                                        About
+                                    </a>
+                                </li>
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Pages -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="appointment" class="nav-link">-->
+<!--                                                Appointment-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="#" class="nav-link">-->
+<!--                                                Case study -->
+<!--                                                <i class='bx bx-chevron-down'></i>-->
+<!--
+
+
+
+
+         </a>-->
+<!--                                            <ul class="dropdown-menu">-->
+<!--                                                <li class="nav-item">-->
+<!--                                                    <a href="case-study" class="nav-link">-->
+<!--                                                        Case study  -->
+<!--                                                    </a>-->
+<!--                                                </li>-->
+<!--                                                <li class="nav-item">-->
+<!--                                                    <a href="case-details" class="nav-link">-->
+<!--                                                        Case study Details -->
+<!--                                                    </a>-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="departments" class="nav-link">-->
+<!--                                                Departments  -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="faq" class="nav-link">-->
+<!--                                                FAQ-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        -->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="testimonials" class="nav-link">-->
+<!--                                                Testimonials-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="signin" class="nav-link">-->
+<!--                                                Sign In-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="signup" class="nav-link">-->
+<!--                                                Sign Up-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="terms-condition" class="nav-link">-->
+<!--                                                Terms & Conditions-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="privacy-policy" class="nav-link">-->
+<!--                                                Privacy Policy-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="404" class="nav-link">-->
+<!--                                                404 page-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="coming-soon" class="nav-link">-->
+<!--                                                Coming Soon-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Doctors -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="doctors" class="nav-link">-->
+<!--                                                Doctors -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="doctors-details" class="nav-link">-->
+<!--                                                Doctors Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Services-->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="services-1" class="nav-link">-->
+<!--                                                Services Style One-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="services-2" class="nav-link">-->
+<!--                                                Services Style Two-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="service-details" class="nav-link">-->
+<!--                                                Service Details-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Blog-->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-1" class="nav-link">-->
+<!--                                                Blog Style One -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-2" class="nav-link">-->
+<!--                                                Blog Style Two -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-details" class="nav-link">-->
+<!--                                                Blog Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+                                <li class="nav-item">
+                                    <a href="shop" class="nav-link">
+                                        Shop
+
+                                    </a>
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="shop" class="nav-link">-->
+<!--                                                Shop-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+                                        <li class="nav-item">
+                                            <a href="cart" class="nav-link">
+                                                Cart
+                                            </a>
+                                        </li>
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="checkout" class="nav-link">-->
+<!--                                                Checkout-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="shop-details" class="nav-link">-->
+<!--                                                Shop Details-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="wishlist" class="nav-link">-->
+<!--                                                Wishlist-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+                                <li class="nav-item">
+                                    <a href="contact" class="nav-link">
+                                        Contact
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+<!--                                    <i class='search-btn bx bx-search'></i>-->
+                                      {% if request.session.login_id %}
+
+                                    <a href="userdata">
+                                                           <i class=' bx bx-edit h5 text-dark'>Edit Profile</i>
+                                           </a>
+                                          <a href="logout">
+                                                           <i class=' bx bx-lock h5 text-dark'>Logout</i>
+
+                                    </a>
+                                                            {% else %}
+                                      <a href="signup">
+                                                           <i class=' bx bx-user h5 text-dark'> Register</i>
+                                      </a>
+                                     <a href="signin">
+                                                           <i class=' bx bx-lock h5 text-dark'> Login</i>
+                                     </a>
+
+
+                                    {% endif %}
+
+                                    <div class="search-overlay search-popup">
+                                        <div class='search-box'>
+                                            <form class="search-form">
+                                                <input class="search-input" name="search" placeholder="Search" type="text">
+
+                                                <button class="search-button" type="submit">
+                                                    <i class="bx bx-search"></i>
+
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+<!--                                <div class="option-item">-->
+<!--                                    <div class="add-cart-btn">-->
+<!--                                        <a href="#" class="cart-btn-icon">-->
+<!--                                            <i class='bx bx-shopping-bag'></i>-->
+<!--                                            <span>0</span>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="side-nav-responsive">
+                <div class="container">
+                    <div class="dot-menu">
+                        <div class="circle-inner">
+                            <div class="circle circle-one"></div>
+                            <div class="circle circle-two"></div>
+                            <div class="circle circle-three"></div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="side-nav-inner">
+                            <div class="side-nav justify-content-center align-items-center">
+                                <div class="side-item">
+                                    <div class="option-item">
+                                        <i class='search-btn bx bx-search'></i>
+                                        <i class='close-btn bx bx-x'></i>
+                                        <div class="search-overlay search-popup">
+                                            <div class='search-box'>
+                                                <form class="search-form">
+                                                    <input class="search-input" name="search" placeholder="Search" type="text">
+
+                                                    <button class="search-button" type="submit">
+                                                        <i class="bx bx-search"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="option-item">
+                                        <div class="add-cart-btn">
+                                            <a href="#" class="cart-btn-icon">
+                                                <i class='bx bx-shopping-bag'></i>
+                                                <span>0</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+        {% block main%}
+        {% endblock%}
+
+
+
+        <!-- Footer Area -->
+        <footer class="footer-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3>Contact Info</h3>
+                            <p>Have a question or need help? Fill out the form below, and our team will respond within 24 hours. We’re here to assist you.</p>
+                            <ul class="footer-contact-list">
+                                <li>
+                                    <i class='flaticon-pin'></i>
+                                    <div class="content">
+                                        Ahmedabad, Gujarat,india
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class='flaticon-phone-call'></i>
+                                    <div class="content">
+                                        <a href="tel:+91 9054761604">+91 9054761604</a>
+                                        <a href="tel: +91 9016440390"> +91 9016440390</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class='bx bxs-envelope'></i>
+                                    <div class="content">
+                                        <a href="Mediplus@kavras.in"><span class="__cf_email__" data-cfemail="6d05080101022d000809041702430e0200">Mediplus@kavras.in</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h3>Important Link</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="/about" target="_blank">
+                                        <i class='bx bxs-chevron-right'></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/shop" target="_blank">
+                                        <i class='bx bxs-chevron-right'></i>
+                                        Shop
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/cart" target="_blank">
+                                        <i class='bx bxs-chevron-right'></i>
+                                        Cart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contact" target="_blank">
+                                        <i class='bx bxs-chevron-right'></i>
+                                        Contact
+                                    </a>
+                                </li>
+<!--                                <li>-->
+<!--                                    <a href="case-study" target="_blank">-->
+<!--                                        <i class='bx bxs-chevron-right'></i>-->
+<!--                                        Case Study-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="testimonials" target="_blank">-->
+<!--                                        <i class='bx bxs-chevron-right'></i>-->
+<!--                                        Testimonials-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="contact" target="_blank">-->
+<!--                                        <i class='bx bxs-chevron-right'></i>-->
+<!--                                        Contact Us-->
+<!--                                    </a>-->
+<!--                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h3>Follow Us On</h3>
+                            <ul class="footer-list">
+
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i>  Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter'></i>  Twitter</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i>  Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.pinterest.com/" target="_blank"><i class='bx bxl-pinterest-alt'></i>  Pinterest</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i>  Youtube</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget ps-2">
+                            <div class="footer-logo">
+                                <a href="index">
+                            <img src="../static/assets/img/medi+logo.jpeg" height="90px" width="150" class="logo-one" alt="Logo">
+                                </a>
+                            </div>
+                            <p>Offering a wide range of quality medicines, healthcare products, and wellness solutions—all delivered to your doorstep. We prioritize your health and convenience.</p>
+<!--                            <ul class="social-link">-->
+<!--                                <li>-->
+<!--                                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="https://www.pinterest.com/" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i></a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+        <!-- Copy-Right Area -->
+        <div class="copy-right-area">
+            <div class="container">
+                <div class="copy-right-text text-center">
+                    <p>
+                        Copyright ©<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-../static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Medizo. All Rights Reserved by
+                        <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Copy-Right Area End -->
+
+        <!-- Color Switch Button -->
+        <div class="switch-box">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- Color Switch Button End -->
+
+        <!-- Links of JS Files -->
+        <script src="../static/assets/js/jquery.min.js"></script>
+        <script src="../static/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../static/assets/js/owl.carousel.min.js"></script>
+        <script src="../static/assets/js/jquery.nice-select.min.js"></script>
+        <script src="../static/assets/js/wow.min.js"></script>
+        <script src="../static/assets/js/meanmenu.js"></script>
+        <script src="../static/assets/js/bootstrap-datepicker.min.js"></script>
+        <script src="../static/assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="../static/assets/js/form-validator.min.js"></script>
+        <script src="../static/assets/js/contact-form-script.js"></script>
+        <script src="../static/assets/js/custom.js"></script>
+    </body>
+
+<!-- Mirrored from templates.hibootstrap.com/medizo/default/index-2 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 07:49:00 GMT -->
+</html>

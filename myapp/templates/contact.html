@@ -1,0 +1,462 @@
+{% extends 'base.html' %}
+  {% block main%}
+{% if messages %}
+{% for i in messages %}
+  <script>alert("{{i}}")</script>
+{% endfor %}
+{% endif  %}
+        <!-- Start Navbar Area -->
+<!--        <div class="navbar-area">-->
+<!--            &lt;!&ndash; Menu For Mobile Device &ndash;&gt;-->
+<!--             <div class="mobile-nav">-->
+<!--                <a href="index.html" class="logo">-->
+<!--                    <img src="../static/aasets/img/logo.png" class="logo-one" alt="Logo">-->
+<!--                    <img src="../static/aasets/img/logo-2.png" class="logo-two" alt="Logo">-->
+<!--                </a>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Menu For Desktop Device &ndash;&gt;-->
+<!--            <div class="main-nav">-->
+<!--                <div class="container">-->
+<!--                    <nav class="navbar navbar-expand-md navbar-light ">-->
+<!--                        <a class="navbar-brand" href="index.html">-->
+<!--                            <img src="../static/aasets/img/logo.png" class="logo-one" alt="Logo">-->
+<!--                            <img src="../static/aasets/img/logo-2.png" class="logo-two" alt="Logo">-->
+<!--                        </a>-->
+
+<!--                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">-->
+<!--                            <ul class="navbar-nav m-auto">-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Home -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index.html" class="nav-link">-->
+<!--                                                Home One  -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-2.html" class="nav-link">-->
+<!--                                                Home Two-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-3.html" class="nav-link">-->
+<!--                                                Home Three-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-4.html" class="nav-link">-->
+<!--                                                Home Four-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-5.html" class="nav-link">-->
+<!--                                                Home Five-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-6.html" class="nav-link">-->
+<!--                                                Home Six-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-7.html" class="nav-link">-->
+<!--                                                Home Seven-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="about.html" class="nav-link">-->
+<!--                                        About-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Pages -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="appointment.html" class="nav-link">-->
+<!--                                                Appointment-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="#" class="nav-link">-->
+<!--                                                Case study -->
+<!--                                                <i class='bx bx-chevron-down'></i>-->
+<!--                                            </a>-->
+<!--                                            <ul class="dropdown-menu">-->
+<!--                                                <li class="nav-item">-->
+<!--                                                    <a href="case-study.html" class="nav-link">-->
+<!--                                                        Case study  -->
+<!--                                                    </a>-->
+<!--                                                </li>-->
+<!--                                                <li class="nav-item">-->
+<!--                                                    <a href="case-details.html" class="nav-link">-->
+<!--                                                        Case study Details -->
+<!--                                                    </a>-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="departments.html" class="nav-link">-->
+<!--                                                Departments  -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="faq.html" class="nav-link">-->
+<!--                                                FAQ-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        -->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="testimonials.html" class="nav-link">-->
+<!--                                                Testimonials-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="sign-in.html" class="nav-link">-->
+<!--                                                Sign In-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="sign-up.html" class="nav-link">-->
+<!--                                                Sign Up-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="terms-condition.html" class="nav-link">-->
+<!--                                                Terms & Conditions-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="privacy-policy.html" class="nav-link">-->
+<!--                                                Privacy Policy-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="404.html" class="nav-link">-->
+<!--                                                404 page-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="coming-soon.html" class="nav-link">-->
+<!--                                                Coming Soon-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Doctors -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="doctors.html" class="nav-link">-->
+<!--                                                Doctors -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="doctors-details.html" class="nav-link">-->
+<!--                                                Doctors Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Services -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="services-1.html" class="nav-link">-->
+<!--                                                Services Style One -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="services-2.html" class="nav-link">-->
+<!--                                                Services Style Two -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="service-details.html" class="nav-link">-->
+<!--                                                Service Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Blog-->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-1.html" class="nav-link">-->
+<!--                                                Blog Style One -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-2.html" class="nav-link">-->
+<!--                                                Blog Style Two -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-details.html" class="nav-link">-->
+<!--                                                Blog Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Shop-->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="shop.html" class="nav-link">-->
+<!--                                                Shop-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="cart.html" class="nav-link">-->
+<!--                                                Cart-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="checkout.html" class="nav-link">-->
+<!--                                                Checkout -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="shop-details.html" class="nav-link">-->
+<!--                                                Shop Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="wishlist.html" class="nav-link">-->
+<!--                                                Wishlist -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="contact.html" class="nav-link active">-->
+<!--                                        Contact-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+
+<!--                            <div class="others-options d-flex align-items-center">-->
+<!--                                <div class="option-item">-->
+<!--                                    <i class='search-btn bx bx-search'></i>-->
+<!--                                    <i class='close-btn bx bx-x'></i>-->
+<!--                                    <div class="search-overlay search-popup">-->
+<!--                                        <div class='search-box'>-->
+<!--                                            <form class="search-form">-->
+<!--                                                <input class="search-input" name="search" placeholder="Search" type="text">-->
+
+<!--                                                <button class="search-button"type="submit" >-->
+<!--                                                    <i class="bx bx-search"></i>-->
+<!--                                                </button>-->
+<!--                                            </form>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div class="option-item">-->
+<!--                                    <div class="add-cart-btn">-->
+<!--                                        <a href="#" class="cart-btn-icon">-->
+<!--                                            <i class='bx bx-shopping-bag'></i>-->
+<!--                                            <span>0</span>-->
+<!--                                        </a>-->
+<!--                                    </div>	-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </nav>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div class="side-nav-responsive">
+                <div class="container">
+                    <div class="dot-menu">
+                        <div class="circle-inner">
+                            <div class="circle circle-one"></div>
+                            <div class="circle circle-two"></div>
+                            <div class="circle circle-three"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="side-nav-inner">
+                            <div class="side-nav justify-content-center align-items-center">
+                                <div class="side-item">
+                                    <div class="option-item">
+                                        <i class='search-btn bx bx-search'></i>
+                                        <i class='close-btn bx bx-x'></i>
+                                        <div class="search-overlay search-popup">
+                                            <div class='search-box'>
+                                                <form class="search-form">
+                                                    <input class="search-input" name="search" placeholder="Search" type="text">
+    
+                                                    <button class="search-button" type="submit">
+                                                        <i class="bx bx-search"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="option-item">
+                                        <div class="add-cart-btn">
+                                            <a href="#" class="cart-btn-icon">
+                                                <i class='bx bx-shopping-bag'></i>
+                                                <span>0</span>
+                                            </a>
+                                        </div>	
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+        <!-- Inner Banner -->
+        <div class="inner-banner inner-bg2">
+            <div class="container">
+                <div class="inner-title">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-banner-shape">
+                <div class="shape1">
+                    <img src="../static/aasets/img/inner-banner/inner-banner-shape1.png" alt="Images">
+                </div>
+                <div class="shape2">
+                    <img src="../static/aasets/img/inner-banner/inner-banner-shape2.png" alt="Images">
+                </div>
+            </div>
+        </div>
+        <!-- Inner Banner End -->
+
+        <!-- Contact Area -->
+        <div class="contact-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="contact-widget-right">
+                            <h3>Contact Info</h3>
+                            <p>Have a question or need help? Fill out the form below, and our team will respond within 24 hours. We’re here to assist you.</p>
+                            <ul class="contact-list">
+                                <li>
+                                    <i class='flaticon-pin'></i>
+                                    <div class="content">
+                                        Ahmedabad, Gujarat,india
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class='flaticon-phone-call'></i>
+                                    <div class="content">
+                                        <a href="tel:+91 9054761604">+91 9054761604</a>
+                                        <a href="tel: +91 9016440390"> +91 9016440390</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class='bx bxs-envelope'></i>
+                                    <div class="content">
+                                        <a href="Mediplus@kavras.in"><span class="__cf_email__" data-cfemail="cca4a9a0a0a38ca1a9a8a5b6a3e2afa3a1">Mediplus@kavras.in</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="contact-form">
+                            <h2>Get in Touch</h2>
+                            <form  action="contactdata" method="post">{% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control" placeholder="Phone">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Your Subject">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Your Message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="default-btn">Send Message</button>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-shape">
+                <img src="../static/aasets/img/shape/shape2.png" alt="Images">
+            </div>
+        </div>
+        <!-- Contact Area End -->
+
+        <!-- Map Area -->
+        <div class="map-area">
+            <div class="container-fluid m-0 p-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.387759539821!2d-74.0094841843446!3d40.709479645706075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a18049ba121%3A0x51924d7e3a9cb794!2zMTIzIFdpbGxpYW0gU3QgIzgwMSwgTmV3IFlvcmssIE5ZIDEwMDM4LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1601377497844!5m2!1sbn!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <!-- Map Area End -->
+
+       {% endblock%}

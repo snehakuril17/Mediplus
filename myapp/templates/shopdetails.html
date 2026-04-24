@@ -1,0 +1,746 @@
+{% extends 'base.html' %}
+  {% block main%}
+{% if messages %}
+{% for i in messages %}
+  <script>alert("{{i}}")</script>
+{% endfor %}
+{% endif  %}
+        <!-- Start Navbar Area -->
+<!--        <div class="navbar-area">-->
+<!--            &lt;!&ndash; Menu For Mobile Device &ndash;&gt;-->
+<!--             <div class="mobile-nav">-->
+<!--                <a href="index.html" class="logo">-->
+<!--                    <img src="../static/assets/img/logo.png" class="logo-one" alt="Logo">-->
+<!--                    <img src="../static/assets/img/logo-2.png" class="logo-two" alt="Logo">-->
+<!--                </a>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Menu For Desktop Device &ndash;&gt;-->
+<!--            <div class="main-nav">-->
+<!--                <div class="container">-->
+<!--                    <nav class="navbar navbar-expand-md navbar-light ">-->
+<!--                        <a class="navbar-brand" href="index.html">-->
+
+<!--                            <img src="../static/assets/img/logo.png" class="logo-one" alt="Logo">-->
+<!--                            <img src="../static/assets/img/logo-2.png" class="logo-two" alt="Logo">-->
+<!--                        </a>-->
+
+<!--                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">-->
+<!--                            <ul class="navbar-nav m-auto">-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Home -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index.html" class="nav-link">-->
+<!--                                                Home One  -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-2.html" class="nav-link">-->
+<!--                                                Home Two-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-3.html" class="nav-link">-->
+<!--                                                Home Three-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-4.html" class="nav-link">-->
+<!--                                                Home Four-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-5.html" class="nav-link">-->
+<!--                                                Home Five-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-6.html" class="nav-link">-->
+<!--                                                Home Six-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="index-7.html" class="nav-link">-->
+<!--                                                Home Seven-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="about.html" class="nav-link">-->
+<!--                                        About-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Pages -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="appointment.html" class="nav-link">-->
+<!--                                                Appointment-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="#" class="nav-link">-->
+<!--                                                Case study -->
+<!--                                                <i class='bx bx-chevron-down'></i>-->
+<!--                                            </a>-->
+<!--                                            <ul class="dropdown-menu">-->
+<!--                                                <li class="nav-item">-->
+<!--                                                    <a href="case-study.html" class="nav-link">-->
+<!--                                                        Case study  -->
+<!--                                                    </a>-->
+<!--                                                </li>-->
+<!--                                                <li class="nav-item">-->
+<!--                                                    <a href="case-details.html" class="nav-link">-->
+<!--                                                        Case study Details -->
+<!--                                                    </a>-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="departments.html" class="nav-link">-->
+<!--                                                Departments  -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="faq.html" class="nav-link">-->
+<!--                                                FAQ-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        -->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="testimonials.html" class="nav-link">-->
+<!--                                                Testimonials-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="sign-in.html" class="nav-link">-->
+<!--                                                Sign In-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="sign-up.html" class="nav-link">-->
+<!--                                                Sign Up-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="terms-condition.html" class="nav-link">-->
+<!--                                                Terms & Conditions-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="privacy-policy.html" class="nav-link">-->
+<!--                                                Privacy Policy-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="404.html" class="nav-link">-->
+<!--                                                404 page-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="coming-soon.html" class="nav-link">-->
+<!--                                                Coming Soon-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Doctors -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="doctors.html" class="nav-link">-->
+<!--                                                Doctors -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="doctors-details.html" class="nav-link">-->
+<!--                                                Doctors Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Services -->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="services-1.html" class="nav-link">-->
+<!--                                                Services Style One -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="services-2.html" class="nav-link">-->
+<!--                                                Services Style Two -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="service-details.html" class="nav-link">-->
+<!--                                                Service Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link">-->
+<!--                                        Blog-->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-1.html" class="nav-link">-->
+<!--                                                Blog Style One -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-2.html" class="nav-link">-->
+<!--                                                Blog Style Two -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="blog-details.html" class="nav-link">-->
+<!--                                                Blog Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="#" class="nav-link active">-->
+<!--                                        Shop-->
+<!--                                        <i class='bx bx-chevron-down'></i>-->
+<!--                                    </a>-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="shop" class="nav-link">-->
+<!--                                                Shop-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="cart.html" class="nav-link">-->
+<!--                                                Cart-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="checkout.html" class="nav-link">-->
+<!--                                                Checkout -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="shop-details.html" class="nav-link active">-->
+<!--                                                Shop Details -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                        <li class="nav-item">-->
+<!--                                            <a href="wishlist.html" class="nav-link">-->
+<!--                                                Wishlist -->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                                <li class="nav-item">-->
+<!--                                    <a href="contact.html" class="nav-link">-->
+<!--                                        Contact-->
+<!--                                    </a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+
+<!--                            <div class="others-options d-flex align-items-center">-->
+<!--                                <div class="option-item">-->
+<!--                                    <i class='search-btn bx bx-search'></i>-->
+<!--                                    <i class='close-btn bx bx-x'></i>-->
+<!--                                    <div class="search-overlay search-popup">-->
+<!--                                        <div class='search-box'>-->
+<!--                                            <form class="search-form">-->
+<!--                                                <input class="search-input" name="search" placeholder="Search" type="text">-->
+
+<!--                                                <button class="search-button" type="submit">-->
+<!--                                                    <i class="bx bx-search"></i>-->
+<!--                                                </button>-->
+<!--                                            </form>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div class="option-item">-->
+<!--                                    <div class="add-cart-btn">-->
+<!--                                        <a href="#" class="cart-btn-icon">-->
+<!--                                            <i class='bx bx-shopping-bag'></i>-->
+<!--                                            <span>0</span>-->
+<!--                                        </a>-->
+<!--                                    </div>	-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </nav>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="side-nav-responsive">-->
+<!--                <div class="container">-->
+<!--                    <div class="dot-menu">-->
+<!--                        <div class="circle-inner">-->
+<!--                            <div class="circle circle-one"></div>-->
+<!--                            <div class="circle circle-two"></div>-->
+<!--                            <div class="circle circle-three"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    -->
+<!--                    <div class="container">-->
+<!--                        <div class="side-nav-inner">-->
+<!--                            <div class="side-nav justify-content-center align-items-center">-->
+<!--                                <div class="side-item">-->
+<!--                                    <div class="option-item">-->
+<!--                                        <i class='search-btn bx bx-search'></i>-->
+<!--                                        <i class='close-btn bx bx-x'></i>-->
+<!--                                        <div class="search-overlay search-popup">-->
+<!--                                            <div class='search-box'>-->
+<!--                                                <form class="search-form">-->
+<!--                                                    <input class="search-input" name="search" placeholder="Search" type="text">-->
+<!--    -->
+<!--                                                    <button class="search-button" type="submit">-->
+<!--                                                        <i class="bx bx-search"></i>-->
+<!--                                                    </button>-->
+<!--                                                </form>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+
+<!--                                    <div class="option-item">-->
+<!--                                        <div class="add-cart-btn">-->
+<!--                                            <a href="#" class="cart-btn-icon">-->
+<!--                                                <i class='bx bx-shopping-bag'></i>-->
+<!--                                                <span>0</span>-->
+<!--                                            </a>-->
+<!--                                        </div>	-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- End Navbar Area -->
+
+        <!-- Inner Banner -->
+        <div class="inner-banner inner-bg12">
+            <div class="container">
+                <div class="inner-title">
+                    <h3>Shop Details</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>Shop Details</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-banner-shape">
+                <div class="shape1">
+                    <img src="../static/assets/img/inner-banner/inner-banner-shape1.png" alt="Images">
+                </div>
+                <div class="shape2">
+                    <img src="../static/assets/img/inner-banner/inner-banner-shape2.png" alt="Images">
+                </div>
+            </div>
+        </div>
+
+
+<form action="/addproduct" method="post"> {% csrf_token %}
+    <!-- Product Details Area -->
+    <div class="product-details-area pt-100 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="product-detls-image">
+                        <img src="{{singledata.image.url}}" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="product-desc">
+                        <h3>{{singledata.name}}</h3>
+                        <div class="price">
+                            <span class="new-price">Rs.{{singledata.price}}</span>
+                            <input type="hidden" value="{{singledata.price}}" name="pprice" id="productPrice">
+                            <input type="hidden" value="{{singledata.id}}" name="pid">
+                        </div>
+
+                        <p>{{singledata.des}}</p>
+
+                        <div class="input-count-area">
+                            <h3>Quantity</h3>
+                            <div class="input-counter">
+                                <label for="quantity">Select Quantity:</label>
+                                <select id="quantity" name="qty">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="product-add-btn">
+                            <!-- BUY NOW opens modal -->
+                            <button type="button" class="default-btn default-bg-buttercup" data-bs-toggle="modal" data-bs-target="#orderModal">
+                                <i class="fas fa-cart-plus"></i> Buy Now!
+                            </button>
+
+                            <!-- Add to cart -->
+                            <button type="submit" class="default-btn default-bg-buttercup">
+                                <i class="fas fa-cart-plus"></i> Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- Order Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Place Your Order</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Hidden quantity input from dropdown -->
+          <input type="hidden" id="modalQty" name="qty" value="1">
+
+          <div class="mb-3">
+            <label for="deliveyAddess" class="form-label">Delivery Address</label>
+            <textarea class="form-control" id="deliveyAddess" name="address" required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="paymentMode" class="form-label">Payment Mode</label>
+            <select class="form-control" id="paymentMode" name="paymode" required>
+              <option value="offline">Cash on Delivery</option>
+              <option value="online">Online Payment</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Place Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+    const qtySelect = document.getElementById("quantity");
+    const modalQtyInput = document.getElementById("modalQty");
+
+    qtySelect.addEventListener("change", () => {
+        modalQtyInput.value = qtySelect.value;
+    });
+
+    document.querySelector('[data-bs-target="#orderModal"]').addEventListener("click", () => {
+        modalQtyInput.value = qtySelect.value;
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Product Tab -->
+        <div class="product-tab pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="tab products-details-tab">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <ul class="tabs">
+                                        <li>
+                                            <a href="#">
+                                                Description
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Reviews  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="tab_content current active pt-45">
+                                        <div class="tabs_item current">
+                                            <div class="products-tabs-decs">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu neque ut ipsum tempor varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam eget ligula eget sem lacinia varius. Maecenas maximus vitae ligula sit amet placerat. Suspendisse elementum porttitor erat tempus malesuada. Vestibulum lorem ipsum, congue sed risus cursus, condimentum luctus nibh. Ut convallis ultrices lorem. Donec blandit purus ac lacus finibus, nec feugiat elit auctor.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabs_item">
+                                            <div class="products-tabs-reviews">
+                                                <ul>
+                                                    <li>
+                                                        <img src="../static/assets/img/product/product-profile1.jpg" alt="Image">
+                                                        <h3>Devit M. kolin</h3>
+                                                        <div class="content">
+                                                            <div class="rating">
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star-half'></i>
+                                                            </div>
+                                                            <span>19 Jan 2024</span>
+                                                        </div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+                                                    </li>
+
+                                                    <li>
+                                                        <img src="../static/assets/img/product/product-profile2.jpg" alt="Image">
+                                                        <h3>Donam. Markin</h3>
+                                                        <div class="content">
+                                                            <div class="rating">
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star'></i>
+                                                                <i class='bx bxs-star-half'></i>
+                                                            </div>
+                                                            <span>14 April 2024</span>
+                                                        </div>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+                                                    </li>
+                                                </ul>
+                                                <div class="reviews-form">
+                                                    <div class="contact-form">
+                                                        <h3>Add Your Review</h3>
+                                                        <p>Lorem ipsum dolo sit amet, consectetur adipisicing  eiusmod tempor incididun </p>
+                                                        <div class="rating">
+                                                            <i class='bx bxs-star'></i>
+                                                            <i class='bx bxs-star'></i>
+                                                            <i class='bx bxs-star'></i>
+                                                            <i class='bx bxs-star'></i>
+                                                            <i class='bx bxs-star-half'></i>
+                                                        </div>
+                                                        <form id="contactForm">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Name*">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="col-lg-6 col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <input type="email" name="email_address" id="email_address" required data-error="Please enter email address" class="form-control" placeholder="Email Address*">
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Your Message"></textarea>
+                                                                    </div>
+                                                                </div>
+                                
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <button type="submit" class="default-btn">
+                                                                        Send Your Message
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Tab End -->
+
+        <!-- product Slider Area End -->
+        <div class="product-slider-area pb-70">
+            <div class="container">
+                <div class="product-title">
+                   <h2>Popular Safety Products</h2>
+                </div>
+                <div class="product-slider owl-carousel owl-theme">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="../static/assets/img/product/product1.png" alt="Images"></a>
+                            <div class="product-add">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-view"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-testing"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>Care, Health <del class="price">$450</del></h4>
+                            <h3>Remdesivir <span>$300</span></h3>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+
+                            <div class="product-btn">
+                                <a href="cart.html" class="add-btn">Add To Cart <i class="flaticon-shopping-cart icon"></i></a>
+                                <a href="wishlist.html" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="../static/assets/img/product/product2.png" alt="Images"></a>
+                            <div class="product-add">
+                                <ul>
+                                    <li><a href=""><i class="flaticon-view"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-testing"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>Care, Health <del class="price">$250</del></h4>
+                            <h3>Tocilizumab <span>$200</span></h3>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+
+                            <div class="product-btn">
+                                <a href="cart.html" class="add-btn">Add To Cart <i class="flaticon-shopping-cart icon"></i></a>
+                                <a href="wishlist.html" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="../static/assets/img/product/product3.png" alt="Images"></a>
+                            <div class="product-add">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-view"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-testing"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>Care, Health <del class="price">$150</del></h4>
+                            <h3>Dexamethasone <span>$100</span></h3>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+
+                            <div class="product-btn">
+                                <a href="cart.html" class="add-btn">Add To Cart <i class="flaticon-shopping-cart icon"></i></a>
+                                <a href="wishlist.html" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="../static/assets/img/product/product4.png" alt="Images"></a>
+                            <div class="product-add">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-view"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-testing"></i></a></li>
+                                </ul>
+                            </div>
+                            <h3 class="best-sale">Sale</h3>
+                        </div>
+                        <div class="content">
+                            <h4>Care, Health <del class="price">$250</del></h4>
+                            <h3>Xeljanz <span>$200</span></h3>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+
+                            <div class="product-btn">
+                                <a href="cart.html" class="add-btn">Add To Cart <i class="flaticon-shopping-cart icon"></i></a>
+                                <a href="wishlist.html" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="../static/assets/img/product/product5.png" alt="Images"></a>
+                            <div class="product-add">
+                                <ul>
+                                    <li><a href="#"><i class="flaticon-view"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-testing"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4>Care, Health <del class="price">$250</del></h4>
+                            <h3>Jakafi <span>$200</span></h3>
+                            <div class="rating">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bx-star'></i>
+                            </div>
+
+                            <div class="product-btn">
+                                <a href="cart.html" class="add-btn">Add To Cart <i class="flaticon-shopping-cart icon"></i></a>
+                                <a href="wishlist.html" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product Slider Area End -->
+
+       {% endblock %}

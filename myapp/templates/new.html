@@ -1,0 +1,95 @@
+<section class="cart-wraps-area ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+							<div class="cart-wraps">
+								<div class="cart-table table-responsive">
+									<table class="table table-bordered " align="center">
+										<thead >
+											<tr>
+												<th scope="col">Product</th>
+												<th scope="col">Name</th>
+												<th scope="col">Unit Price</th>
+												<th scope="col">Quantity</th>
+												<th scope="col">Total</th>
+												<th scope="col">Action</th>
+											</tr>
+										</thead>
+
+										<tbody class="text-dark">
+                                          {% for data in allcartdata %}
+											<tr>
+												<td>
+													<img src="{{data.product_id.image.url}}" height="100px" width="100px" alt="=Product Image"></td>
+
+												<td>{{data.product_id.name}}</td>
+
+												<td>Rs. {{data.product_id.price}}</td>
+
+												<td class="product-quantity">
+													<div class="input-counter">
+														<span class="minus-btn">
+															<a href="decrease/{{data.id}}" class='bx bx-minus/'>-</a>
+														</span>
+                                                        <span> {{data.quantity}}</span>
+														<span class="plus-btn">
+															<a href="increase/{{data.id}}" class='bx bx-plus/'>+</a>
+														</span>
+													</div>
+												</td>
+
+												<td id="total1">Rs.{{data.totalamount}}
+                                                </td>
+                                                <td >
+													<a href="remove/{{data.id}}" class="default-btn p-2 ">
+X
+													</a>
+												</td>
+											</tr>
+                                          {% endfor %}
+										</tbody>
+									</table>
+								</div>
+<!--                                <div class="cart-buttons">-->
+<!--									<div class="row align-items-center">-->
+<!--										<div class="col-lg-7 col-sm-7 col-md-7">-->
+<!--											<div class="continue-shopping-box">-->
+<!--												<a href="#" class="default-btn">-->
+<!--													Continue Shopping-->
+<!--												</a>-->
+<!--											</div>-->
+<!--										</div>-->
+
+<!--										<div class="col-lg-5 col-sm-5 col-md-5 text-end">-->
+<!--											<a href="#" class=" default-btn">-->
+<!--												Update Cart-->
+<!--											</a>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+                            </div>
+							<div class="row">
+								<div class="col-lg-12">
+                                   <form action="placeorder" style="width:100%;" method="post">
+                                    {% csrf_token %}
+									<div class="cart-totals">
+										<h3>Payment</h3>
+                                        <input type="text" name="address" placeholder="Address"><br><br>
+                                        <input type="text"  name="phone" placeholder="Phone"><br>
+                                        <input type="hidden" name="total" value="{{total}}">
+
+
+                                        <label>Payment type</label><br>
+                                        <select class="form-control" id="paymentmode" name="paymode" required>
+                                            <option value="offline">Cash On Delivery</option>
+                                            <option value="online">Online Payment</option>
+                                        </select><br><br>
+										<input class="default-btn default-hot-toddy" type="submit" value="Proceed To Checkout">
+									</div>
+                                </form>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
